@@ -1,0 +1,47 @@
+
+  
+.img-left
+{
+    float: left;
+    
+    margin: 0 auto;
+    height:auto; 
+    
+}
+
+.big-header
+{
+    font-size:40px;
+    text-align: left;
+    background-image: linear-gradient(to right, #f2f2f2, white);
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px #333;
+    top: 1%;
+    padding: 10px;
+}
+
+  .leftcolumn {
+    float:left;
+    width: 30%;
+  }
+  
+  /* Middle column */
+  .rightcolumn {
+    float:right;
+    width: 70%;
+  }
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 1000px) {
+    .column.side, .column.middle {
+      width: 100%;
+      padding:0;
+    }
+  
+  

@@ -13,12 +13,15 @@
 </head>
 
 <body>
-  <header class="header" href="{{ url_for('home') }}">
-    <h1>{{ name }}</h1>
+  <header class="header">
+    <a class="header-name" href='/'>
+      <h1>{{ name }}</h1>
+    </a>
   </header>
   
   <nav class="main-nav">
     <ul>
+      <li><a href="/">Home</a></li>
       <li class="dropdown">
           <a href="javascript:void(0)" class="dropbtn">Session</a>
           <div class="dropdown-content">
@@ -41,9 +44,9 @@
       </ul>
   </nav>  
     {% block content %}{% endblock %}
-
+  
   <footer>
-    <div class="footer">
+    <div class="footer main-res">
       <p> © {{ name }} 2019. All Right Reserved. </p>
       <div class="social">
         <a href="#" class="fa fa-facebook"></a>
